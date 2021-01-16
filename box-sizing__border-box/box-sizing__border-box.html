@@ -1,0 +1,39 @@
+<!-- 이에 대한 설명은 블로그에 기록: https://velog.io/@potter/CSS-box-sizing-border-box -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 아스틱 태그: "*" ==> 웹에 등장하는 모든 태그라는 선택자. */
+    * {
+      box-sizing: border-box;
+    }
+
+    div {
+      margin: 10px;
+    }
+
+    #small {
+      border: 10px solid black;
+      /* padding: 20px; */
+      width: 150px;
+    }
+
+    #large {
+      border: 30px solid black;
+      /* padding: 50px; */
+      width: 150px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="small">Hello world</div>
+  <div id="large">Hello world</div>
+</body>
+
+</html>
